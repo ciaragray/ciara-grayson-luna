@@ -1,0 +1,75 @@
+body {
+  background-color: darkgreen;
+  color: darkgoldenrod;
+  font-family: "Bebas Neue", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: black;
+}
+#About h2 {
+  text-align: center;
+}
+#ciarasphoto {
+  display: block;
+  margin-left: auto; /* right-align */
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
+}
+#About p {
+  text-align: left;
+}
+#Experience {
+  border
+}
+
+#Experience h2 {
+  text-align: center;
+}
+#Experience ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+#Connect h2 {
+  text-align: center;
+}
+
+#Connect ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#Connect li {
+  margin: 0;
+}
+
+#Connect {
+  display: inline-block;
+  background: var(--terracotta, #d56b4e);
+  color: goldenrod;
+  text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+#Connect {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
