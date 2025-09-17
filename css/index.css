@@ -6,6 +6,8 @@ body {
     sans-serif;
 }
 nav {
+  border: 2px solid goldenrod;
+  border-radius: 100px;
   background-color: darkgreen;
   display: flex;
   justify-content: center;
@@ -34,7 +36,11 @@ h1 {
   margin: 0;
 }
 .about h2 {
+  border: 2px solid goldenrod;
+  border-radius: 100px;
   text-align: center;
+  background-color: #d56b4e;
+  color: black;
 }
 .flex {
   display: flex;
@@ -46,13 +52,17 @@ h1 {
   margin-left: auto; /* right-align */
   width: 220px;
   height: auto;
-  border-radius: 12px;
+  border-radius: 100px;
   border: 2px solid goldenrod;
 }
 #about p {
   text-align: left;
 }
 .experience h2 {
+  border: 2px solid goldenrod;
+  border-radius: 100px;
+  background-color: #d56b4e;
+  color: black;
   text-align: center;
 }
 .experience ul {
