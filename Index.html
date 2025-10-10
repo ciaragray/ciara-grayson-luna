@@ -23,6 +23,7 @@
         <li><a href="#connect">Connect</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#leave_message">Leave A Message</a></li>
       </ul>
     </nav>
 
@@ -66,6 +67,35 @@
     </section>
     <section class="projects">
       <h2>Projects</h2>
+      <ul></ul>
+    </section>
+    <section>
+      <h2>Leave A Message</h2>
+      <form action="submit" method="Post">
+        <br />
+        <div>
+          <label for="userName">User Name</label>
+          <input
+            id="userName"
+            name="Username"
+            type="text"
+            require="true"
+            placeholder="Ex:cigray2025"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="text" required="true" />
+        </div>
+        <br />
+        <textarea id="usersMessage" required="true"></textarea>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section class="messages">
+      <h2>Messages</h2>
       <ul></ul>
     </section>
     <script src="js/index.js"></script>
