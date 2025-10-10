@@ -125,6 +125,33 @@ h1 {
 #skills {
 }
 
+form[name="leave_message"] {
+  max-width: 640px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  display: grid;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #e9dfc6;
+  border-radius: 12px;
+}
+form[name="leave_message"] label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+form[name="leave_message"] button {
+  background: var(--terracotta, #d56b4e);
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 0.75rem 1.1rem;
+  min-height: 44px; /* tap target */
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
 footer {
   border: 2px solid goldenrod;
   background-color: black;
