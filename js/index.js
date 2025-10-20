@@ -58,3 +58,40 @@ removeButton.addEventListener("click", function (e) {
 });
 newMessage.appendChild(removeButton);
 messageList.appendChild(newMessage);
+
+let repositories = [];
+
+fetch("https://api.github.com/users/ciaragray/repos")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    repositories = data; // store it
+    console.log("repositories:", repositories);
+
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+    projectList.innerHTML = "";
+
+    if (repositories.length === 0) {
+      const li = document.createElement("li");
+      li.innerText = "No repositories found.";
+      projectList.appendChild(li);
+      return;
+    }
+
+    for (let i = 0; i < repositories.length; i++) {
+      const repo = repositories[i];
+      const project = document.createElement("li");
+      project.innerText = repo.name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(function (err) {
+    console.error("Fetch error:", err);
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+    const li = document.createElement("li");
+    li.innerText = "Could not load repositories right now.";
+    projectList.appendChild(li);
+  });
