@@ -101,11 +101,12 @@ h1 {
 }
 
 .connect li {
+  display: flex;
+  text-align: center;
   margin: 0;
 }
 
 .connect {
-  display: inline-block;
   color: black;
   background: var(--terracotta);
   text-decoration: none;
@@ -121,10 +122,39 @@ h1 {
   transform: translateY(-2px);
   filter: brightness(1.06);
 }
-
-#skills {
+#skills h2 {
+  border: 2px solid goldenrod;
+  border-radius: 100px;
+  background-color: var(--terracotta);
+  color: black;
+  text-align: center;
 }
-
+#skills ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex-wrap: wrap;
+}
+#projects h2 {
+  border: 2px solid goldenrod;
+  border-radius: 100px;
+  background-color: var(--terracotta);
+  color: black;
+  text-align: center;
+}
+#projects ul {
+  list-style: none;
+}
+#projects a {
+  color: goldenrod;
+}
+#form h2 {
+  border: 2px solid goldenrod;
+  border-radius: 100px;
+  background-color: var(--terracotta);
+  color: black;
+  text-align: center;
+}
 form[name="leave_message"] {
   max-width: 640px;
   margin: 1.5rem auto;

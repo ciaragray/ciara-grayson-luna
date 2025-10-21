@@ -53,7 +53,7 @@ messageForm.addEventListener("submit", function (event) {
   removeButton.innerText = "remove";
 
   removeButton.addEventListener("click", function (e) {
-    const entry = e.target.parentNode; // the <li>
+    const entry = e.target.parentNode;
     entry.remove();
   });
   newMessage.appendChild(removeButton);
@@ -67,7 +67,7 @@ fetch("https://api.github.com/users/ciaragray/repos")
     return response.json();
   })
   .then(function (data) {
-    repositories = data; // store it
+    repositories = data;
     console.log("repositories:", repositories);
 
     const projectSection = document.getElementById("projects");
